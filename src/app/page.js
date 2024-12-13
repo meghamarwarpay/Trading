@@ -1,16 +1,17 @@
+import AboutPage from "@/app/about/page";
+import HomePage from "./home/page";
+import FAQ from "./faq/page";
 import HomeComponent from "@/components/Home/home";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-// import { Navbar } from "@/layout/Header";
-
-
 
 
 export default function Home() {
   return (<div>
-    {/* <Navbar /> */}
-   <HomeComponent/>
+    <HomeComponent />
+    <div>
+    <HomePage/>
+    <AboutPage/>
+    <FAQ/>
+    </div>
   </div>
   );
 }
