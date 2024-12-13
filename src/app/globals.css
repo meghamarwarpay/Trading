@@ -7,21 +7,63 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
+}
+.services {
+  padding: 100px 0;
+  background-image: url('../assets/images/panel-bg2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: hue-rotate(361deg) brightness(18.6);
+}
+
+.rules-img {
+  height: 70px;
+  width: 70px;
+  background-color: #e1c64c;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules-content h4 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+
+.servicesPageLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesPageLeft h3 {
+  color: #000;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.servicesRulesWrap {
+  border: 2px dashed orange;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.servicesIcon {
+  height: 40px;
+  color: #fff;
 }
