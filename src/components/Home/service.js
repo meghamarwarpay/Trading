@@ -1,6 +1,9 @@
 import Image from 'next/image';
-// Uncomment and use this import if you want to use local images
-// import img from '../../assets/images/panel-bg2.jpg';
+import img from "../../assets/images/free-call.png"
+import img1 from "../../assets/images/stock-market-news.png"
+import img2 from "../../assets/images/stock-market.png"
+import img3 from "../../assets/images/stocks.png"
+import img4 from "../../assets/images/free-learning.png"
 
 const Services = () => {
   return (
@@ -18,8 +21,8 @@ const Services = () => {
           <div className="col-md-4 col-sm-12 servicesPoints mt-5">
             <div className="servicesRulesWrap aos-init aos-animate" data-aos="flip-left" data-aos-delay="140">
               <div className="rulesImg">
-                {/* Uncomment this if you want to show an image */}
-                {/* <Image src={img} alt="Free Calls" className="servicesIcon" width={40} height={40} /> */}
+                {/* Make sure the images are in the public folder */}
+                <Image src={img} alt="Free Calls" className="servicesIcon" width={40} height={40} />
               </div>
               <div className="rulesContent">
                 <h4>Free 2-3 Researched Options Calls</h4>
@@ -27,8 +30,7 @@ const Services = () => {
             </div>
             <div className="servicesRulesWrap mt-5 aos-init aos-animate" data-aos="flip-left" data-aos-delay="120">
               <div className="rulesImg">
-                {/* Uncomment this if you want to show an image */}
-                {/* <Image src="/images/stock-market-news.png" alt="Market News" className="servicesIcon" width={40} height={40} /> */}
+                <Image src={img1} alt="Market News" className="servicesIcon" width={40} height={40} />
               </div>
               <div className="rulesContent">
                 <h4>Realtime Market News &amp; Updates</h4>
@@ -38,8 +40,7 @@ const Services = () => {
           <div className="col-md-4 col-sm-12 servicesPoints">
             <div className="servicesRulesWrap aos-init aos-animate" data-aos="flip-left" data-aos-delay="130">
               <div className="rulesImg">
-                {/* Uncomment this if you want to show an image */}
-                {/* <Image src="/images/stocks.png" alt="Stocks" className="servicesIcon" width={40} height={40} /> */}
+                <Image src={img2} alt="Stocks" className="servicesIcon" width={40} height={40} />
               </div>
               <div className="rulesContent">
                 <h4>Free 3-4 Breakout Stocks</h4>
@@ -47,8 +48,7 @@ const Services = () => {
             </div>
             <div className="servicesRulesWrap mt-5 aos-init aos-animate" data-aos="flip-left" data-aos-delay="110">
               <div className="rulesImg">
-                {/* Uncomment this if you want to show an image */}
-                {/* <Image src="/images/free-learning.png" alt="Free Learning" className="servicesIcon" width={40} height={40} /> */}
+                <Image src={img4} alt="Free Learning" className="servicesIcon" width={40} height={40} />
               </div>
               <div className="rulesContent">
                 <h4>Free Learning Resources</h4>

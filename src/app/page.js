@@ -1,16 +1,18 @@
 import AboutPage from "@/app/about/page";
-import HomePage from "./home/page";
 import FAQ from "./faq/page";
 import HomeComponent from "@/components/Home/home";
+import Contact from "./contact/page";
+import Plan from "./plan/page";
 
 
 export default function Home() {
   return (<div>
     <HomeComponent />
     <div>
-    <HomePage/>
-    <AboutPage/>
-    <FAQ/>
+    {/* <AboutPage/> */}
+    <Plan/>
+    {/* <FAQ/> */}
+    <Contact/>
     </div>
   </div>
   );

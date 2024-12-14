@@ -1,4 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
+import img from "../assets/images/logo1.png";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -8,10 +10,10 @@ const Footer = () => {
           {/* Left Section */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold">
-              <img src="/your-logo.png" alt="Your Logo" className="w-32" />
+              <Image src={img} height={30} width={90} alt="Logo" />
             </Link>
             <p className="mt-2 text-sm text-gray-400">
-              © {new Date().getFullYear()} Your Company. All rights reserved.
+              © {new Date().getFullYear()} Impactpeak. All rights reserved.
             </p>
           </div>
 
@@ -25,12 +27,15 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-gray-400 hover:text-white">
+                <Link href="/plan" className="text-gray-400 hover:text-white">
                   Pricing Plans
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white">
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-white"
+                >
                   Contact Us
                 </Link>
               </li>
@@ -50,17 +55,31 @@ const Footer = () => {
           </div>
 
           <div className="flex-shrink-0 text-center">
-          <h3 className="text-lg font-semibold mt-6 mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mt-6 mb-4">Contact Us</h3>
             <ul className="text-gray-400">
-              <li>Sheopur Road, Jaipur, 302033</li>
-              <li>Phone: (+91) 9306596579</li>
-              <li>Email: <a href="mailto:info@breakoutmantra.in" className="hover:text-white">info@breakoutmantra.in</a></li>
+              <li>
+                Floor No.: A-12 2nd Floor,
+                <br/> Shree Kanhaiya Mansion,
+                <br/> Vaishali
+                Nagar,
+                <br/> Jaipur,Rajasthan 302021
+              </li>
+              <li>Phone: +91-7727067599</li>
+              <li>
+                Email:{" "}
+                <a
+                  href="impactpeakpvtltd@gmail.com"
+                  className="hover:text-white"
+                >
+                  impactpeakpvtltd@gmail.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,4 +1,6 @@
-"use client"
+"use client";
+
+import { motion } from "framer-motion";
 
 import { useState } from 'react';
 
@@ -34,9 +36,15 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 px-4 sm:px-8 py-12">
-      <h1 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-pink-600 mb-10">
-        Frequently Asked Questions
-      </h1>
+      <motion.h1
+          className="text-4xl font-extrabold mb-10 text-center text-blue-700"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: false }} // Triggers both scroll up and scroll down
+        >
+          Frequently Asked Questions
+        </motion.h1>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-8">
         {faqs.map((faq, index) => (
